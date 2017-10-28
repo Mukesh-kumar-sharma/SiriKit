@@ -1,0 +1,591 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		524CAB991E30071700541A6E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CAB981E30071700541A6E /* AppDelegate.swift */; };
+		524CAB9B1E30071700541A6E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CAB9A1E30071700541A6E /* ViewController.swift */; };
+		524CAB9E1E30071700541A6E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524CAB9C1E30071700541A6E /* Main.storyboard */; };
+		524CABA01E30071700541A6E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 524CAB9F1E30071700541A6E /* Assets.xcassets */; };
+		524CABA31E30071700541A6E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524CABA11E30071700541A6E /* LaunchScreen.storyboard */; };
+		524CABB21E3007E500541A6E /* IntentHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CABB11E3007E500541A6E /* IntentHandler.swift */; };
+		524CABBB1E3007E500541A6E /* IntentsUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 524CABBA1E3007E500541A6E /* IntentsUI.framework */; };
+		524CABBE1E3007E500541A6E /* IntentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 524CABBD1E3007E500541A6E /* IntentViewController.swift */; };
+		524CABC11E3007E500541A6E /* MainInterface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 524CABBF1E3007E500541A6E /* MainInterface.storyboard */; };
+		524CABC51E3007E500541A6E /* AppIntentUI.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 524CABB81E3007E500541A6E /* AppIntentUI.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		524CABC81E3007E500541A6E /* AppIntent.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 524CABAF1E3007E500541A6E /* AppIntent.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		5298F4A41E60CCCD00D32DD0 /* cat.png in Resources */ = {isa = PBXBuildFile; fileRef = 5298F4A21E60CCCD00D32DD0 /* cat.png */; };
+		5298F4A51E60CCCD00D32DD0 /* pig.png in Resources */ = {isa = PBXBuildFile; fileRef = 5298F4A31E60CCCD00D32DD0 /* pig.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		524CABC31E3007E500541A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524CAB8D1E30071700541A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 524CABB71E3007E500541A6E;
+			remoteInfo = AppIntentUI;
+		};
+		524CABC61E3007E500541A6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 524CAB8D1E30071700541A6E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 524CABAE1E3007E500541A6E;
+			remoteInfo = AppIntent;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		524CABCF1E3007E500541A6E /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				524CABC81E3007E500541A6E /* AppIntent.appex in Embed App Extensions */,
+				524CABC51E3007E500541A6E /* AppIntentUI.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		524CAB951E30071700541A6E /* Todd's App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Todd's App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		524CAB981E30071700541A6E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		524CAB9A1E30071700541A6E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		524CAB9D1E30071700541A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		524CAB9F1E30071700541A6E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		524CABA21E30071700541A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		524CABA41E30071700541A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524CABAA1E3007A000541A6E /* Todd's App.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Todd's App.entitlements"; sourceTree = "<group>"; };
+		524CABAF1E3007E500541A6E /* AppIntent.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AppIntent.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		524CABB11E3007E500541A6E /* IntentHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentHandler.swift; sourceTree = "<group>"; };
+		524CABB31E3007E500541A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		524CABB81E3007E500541A6E /* AppIntentUI.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = AppIntentUI.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		524CABBA1E3007E500541A6E /* IntentsUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IntentsUI.framework; path = System/Library/Frameworks/IntentsUI.framework; sourceTree = SDKROOT; };
+		524CABBD1E3007E500541A6E /* IntentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntentViewController.swift; sourceTree = "<group>"; };
+		524CABC01E3007E500541A6E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/MainInterface.storyboard; sourceTree = "<group>"; };
+		524CABC21E3007E500541A6E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5298F4A21E60CCCD00D32DD0 /* cat.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cat.png; sourceTree = "<group>"; };
+		5298F4A31E60CCCD00D32DD0 /* pig.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pig.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		524CAB921E30071700541A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CABAC1E3007E500541A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CABB51E3007E500541A6E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CABBB1E3007E500541A6E /* IntentsUI.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		524CAB8C1E30071700541A6E = {
+			isa = PBXGroup;
+			children = (
+				524CAB971E30071700541A6E /* Todd's App */,
+				524CABB01E3007E500541A6E /* AppIntent */,
+				524CABBC1E3007E500541A6E /* AppIntentUI */,
+				524CABB91E3007E500541A6E /* Frameworks */,
+				524CAB961E30071700541A6E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		524CAB961E30071700541A6E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				524CAB951E30071700541A6E /* Todd's App.app */,
+				524CABAF1E3007E500541A6E /* AppIntent.appex */,
+				524CABB81E3007E500541A6E /* AppIntentUI.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		524CAB971E30071700541A6E /* Todd's App */ = {
+			isa = PBXGroup;
+			children = (
+				524CABAA1E3007A000541A6E /* Todd's App.entitlements */,
+				524CAB981E30071700541A6E /* AppDelegate.swift */,
+				524CAB9A1E30071700541A6E /* ViewController.swift */,
+				524CAB9C1E30071700541A6E /* Main.storyboard */,
+				524CAB9F1E30071700541A6E /* Assets.xcassets */,
+				524CABA11E30071700541A6E /* LaunchScreen.storyboard */,
+				524CABA41E30071700541A6E /* Info.plist */,
+			);
+			path = "Todd's App";
+			sourceTree = "<group>";
+		};
+		524CABB01E3007E500541A6E /* AppIntent */ = {
+			isa = PBXGroup;
+			children = (
+				524CABB11E3007E500541A6E /* IntentHandler.swift */,
+				524CABB31E3007E500541A6E /* Info.plist */,
+			);
+			path = AppIntent;
+			sourceTree = "<group>";
+		};
+		524CABB91E3007E500541A6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				524CABBA1E3007E500541A6E /* IntentsUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		524CABBC1E3007E500541A6E /* AppIntentUI */ = {
+			isa = PBXGroup;
+			children = (
+				524CABBD1E3007E500541A6E /* IntentViewController.swift */,
+				524CABBF1E3007E500541A6E /* MainInterface.storyboard */,
+				5298F4A21E60CCCD00D32DD0 /* cat.png */,
+				5298F4A31E60CCCD00D32DD0 /* pig.png */,
+				524CABC21E3007E500541A6E /* Info.plist */,
+			);
+			path = AppIntentUI;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		524CAB941E30071700541A6E /* Todd's App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524CABA71E30071700541A6E /* Build configuration list for PBXNativeTarget "Todd's App" */;
+			buildPhases = (
+				524CAB911E30071700541A6E /* Sources */,
+				524CAB921E30071700541A6E /* Frameworks */,
+				524CAB931E30071700541A6E /* Resources */,
+				524CABCF1E3007E500541A6E /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				524CABC41E3007E500541A6E /* PBXTargetDependency */,
+				524CABC71E3007E500541A6E /* PBXTargetDependency */,
+			);
+			name = "Todd's App";
+			productName = "Todd's App";
+			productReference = 524CAB951E30071700541A6E /* Todd's App.app */;
+			productType = "com.apple.product-type.application";
+		};
+		524CABAE1E3007E500541A6E /* AppIntent */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524CABCC1E3007E500541A6E /* Build configuration list for PBXNativeTarget "AppIntent" */;
+			buildPhases = (
+				524CABAB1E3007E500541A6E /* Sources */,
+				524CABAC1E3007E500541A6E /* Frameworks */,
+				524CABAD1E3007E500541A6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppIntent;
+			productName = AppIntent;
+			productReference = 524CABAF1E3007E500541A6E /* AppIntent.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		524CABB71E3007E500541A6E /* AppIntentUI */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 524CABC91E3007E500541A6E /* Build configuration list for PBXNativeTarget "AppIntentUI" */;
+			buildPhases = (
+				524CABB41E3007E500541A6E /* Sources */,
+				524CABB51E3007E500541A6E /* Frameworks */,
+				524CABB61E3007E500541A6E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AppIntentUI;
+			productName = AppIntentUI;
+			productReference = 524CABB81E3007E500541A6E /* AppIntentUI.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		524CAB8D1E30071700541A6E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Todd Perkins";
+				TargetAttributes = {
+					524CAB941E30071700541A6E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 645DPB2K5W;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Siri = {
+								enabled = 1;
+							};
+						};
+					};
+					524CABAE1E3007E500541A6E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 645DPB2K5W;
+						ProvisioningStyle = Automatic;
+					};
+					524CABB71E3007E500541A6E = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 645DPB2K5W;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 524CAB901E30071700541A6E /* Build configuration list for PBXProject "Todd's App" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 524CAB8C1E30071700541A6E;
+			productRefGroup = 524CAB961E30071700541A6E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				524CAB941E30071700541A6E /* Todd's App */,
+				524CABAE1E3007E500541A6E /* AppIntent */,
+				524CABB71E3007E500541A6E /* AppIntentUI */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		524CAB931E30071700541A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CABA31E30071700541A6E /* LaunchScreen.storyboard in Resources */,
+				524CABA01E30071700541A6E /* Assets.xcassets in Resources */,
+				524CAB9E1E30071700541A6E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CABAD1E3007E500541A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CABB61E3007E500541A6E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5298F4A51E60CCCD00D32DD0 /* pig.png in Resources */,
+				5298F4A41E60CCCD00D32DD0 /* cat.png in Resources */,
+				524CABC11E3007E500541A6E /* MainInterface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		524CAB911E30071700541A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CAB9B1E30071700541A6E /* ViewController.swift in Sources */,
+				524CAB991E30071700541A6E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CABAB1E3007E500541A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CABB21E3007E500541A6E /* IntentHandler.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		524CABB41E3007E500541A6E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				524CABBE1E3007E500541A6E /* IntentViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		524CABC41E3007E500541A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 524CABB71E3007E500541A6E /* AppIntentUI */;
+			targetProxy = 524CABC31E3007E500541A6E /* PBXContainerItemProxy */;
+		};
+		524CABC71E3007E500541A6E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 524CABAE1E3007E500541A6E /* AppIntent */;
+			targetProxy = 524CABC61E3007E500541A6E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		524CAB9C1E30071700541A6E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				524CAB9D1E30071700541A6E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		524CABA11E30071700541A6E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				524CABA21E30071700541A6E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		524CABBF1E3007E500541A6E /* MainInterface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				524CABC01E3007E500541A6E /* Base */,
+			);
+			name = MainInterface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		524CABA51E30071700541A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		524CABA61E30071700541A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		524CABA81E30071700541A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Todd's App/Todd's App.entitlements";
+				DEVELOPMENT_TEAM = 645DPB2K5W;
+				INFOPLIST_FILE = "Todd's App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toddperkins.Todd-s-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		524CABA91E30071700541A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Todd's App/Todd's App.entitlements";
+				DEVELOPMENT_TEAM = 645DPB2K5W;
+				INFOPLIST_FILE = "Todd's App/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toddperkins.Todd-s-App";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		524CABCA1E3007E500541A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 645DPB2K5W;
+				INFOPLIST_FILE = AppIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toddperkins.Todd-s-App.AppIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		524CABCB1E3007E500541A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 645DPB2K5W;
+				INFOPLIST_FILE = AppIntentUI/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toddperkins.Todd-s-App.AppIntentUI";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		524CABCD1E3007E500541A6E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 645DPB2K5W;
+				INFOPLIST_FILE = AppIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toddperkins.Todd-s-App.AppIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		524CABCE1E3007E500541A6E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = 645DPB2K5W;
+				INFOPLIST_FILE = AppIntent/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.toddperkins.Todd-s-App.AppIntent";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		524CAB901E30071700541A6E /* Build configuration list for PBXProject "Todd's App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CABA51E30071700541A6E /* Debug */,
+				524CABA61E30071700541A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524CABA71E30071700541A6E /* Build configuration list for PBXNativeTarget "Todd's App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CABA81E30071700541A6E /* Debug */,
+				524CABA91E30071700541A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524CABC91E3007E500541A6E /* Build configuration list for PBXNativeTarget "AppIntentUI" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CABCA1E3007E500541A6E /* Debug */,
+				524CABCB1E3007E500541A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		524CABCC1E3007E500541A6E /* Build configuration list for PBXNativeTarget "AppIntent" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				524CABCD1E3007E500541A6E /* Debug */,
+				524CABCE1E3007E500541A6E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 524CAB8D1E30071700541A6E /* Project object */;
+}
